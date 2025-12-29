@@ -43,7 +43,7 @@ const Contact = () => {
       }
     } catch (err) {
       console.error(err);
-      setStatus("Server error.Please try again later.");
+      setStatus("Server error.so,,Please try again later.");
     }
   };
 
