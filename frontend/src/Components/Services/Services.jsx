@@ -1,0 +1,30 @@
+import React from 'react'
+import './Services.css'
+import theme_pattern from '../../assets/theme_pattern.svg'
+import services_data from '../../assets/services_data.js'
+import arrow_icon from '../../assets/arrow_icon.svg'
+const Services = () => {
+  return (
+    <div className="services" id='service-scroll'>
+        <div className="services-title">
+            <h1>My Services</h1>
+            <img src={theme_pattern}alt="" />
+        </div>
+        <div className="services-container">
+            {services_data.map((items,index)=>{
+                return <div key={index}className="services-format">
+                    <h3>{items.s_no}</h3>
+                    <h2>{items.s_name}</h2>
+                    <p>{items.s_desc}</p>
+                    <div className="services-readmore">
+                        <p>Readmore</p>
+                        <img src={arrow_icon}alt="" />
+                    </div>
+                </div>
+            })}
+        </div>
+    </div>
+  )
+}
+
+export default Services

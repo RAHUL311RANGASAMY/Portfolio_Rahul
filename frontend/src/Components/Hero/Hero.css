@@ -1,0 +1,64 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:35px;
+}
+.hero img{
+    margin-top: 150px;
+    height: 350px;
+    width: 350px;
+   
+
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+}
+.hero h1 span{
+  background: linear-gradient(orange,rgb(200, 101, 117));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p{
+    width: 70%;
+    text-align: center;
+    font-size: 24px;
+    line-height:40px
+}
+.hero-action{
+   display: flex;
+   align-items: center;
+   gap:20px;
+   font-size: 24px;
+   margin-bottom: 50px;
+}
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(orange,pink);
+    cursor: pointer;
+    border:2px solid white;
+
+}
+.hero-resume {
+    padding:25px 75px;
+    border-radius: 50px;
+    background:linear-gradient(orange,pink);
+    cursor: pointer;
+    border:2px solid pink ;
+}
+.hero-connect:hover{
+    border: 2px solid rgb(204, 98, 116)
+
+}
+.hero-resume:hover{
+    border-color: rgba(255, 255, 255, 0.986);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
