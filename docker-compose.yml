@@ -1,0 +1,42 @@
+
+# services
+#   backend:
+#      build: ./backend
+#      container_name:backendcompose
+#      restart:always
+#      env_file:
+#        - ./backend/.env
+#      port:
+#        -"5000:5000"
+
+
+
+#   frontend:
+#      build: ./frontend
+#      container_name:frontendcompose
+#      restart:always
+#      port:
+#        -"5173:5173"
+#      depends_on:
+#        -backend  
+
+
+
+services:
+  backend:
+    build: ./backend
+    container_name: backendcompose
+    restart: always
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build: ./frontend
+    container_name: frontendcompose
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend

@@ -1,22 +1,23 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const Contact = require("../models/Contact");
+const Contact = require('../models/Contact');
 
 // POST form data
-router.post("/", async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
     const newContact = new Contact({
       name,
       email,
-      message
+      message,
     });
 
     await newContact.save();
-    res.status(201).json({ message: "Message saved successfully" });
+    res.status(201).json({ message: 'Message saved successfully' });
   } catch (error) {
-    res.status(500).json({ error: "Server error" });
+    res.status(500).json({ error: 'Server error' });
+    console.log(error);
   }
 });
 

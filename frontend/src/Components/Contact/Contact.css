@@ -1,83 +1,77 @@
-.contact{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-        margin: 8px 120px;
-        
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 8px 120px;
 }
-.contact-title{
-   position: relative; 
+.contact-title {
+  position: relative;
 }
-.contact-title h1{
-    align-items: center;
-    font-size: 80px;
-    padding: 0px;
-    
- 
+.contact-title h1 {
+  align-items: center;
+  font-size: 80px;
+  padding: 0px;
 }
-.contact-title img{
+.contact-title img {
   position: absolute;
   z-index: -1;
   right: 0;
-  bottom:0 ;
+  bottom: 0;
 }
-.contact-lr{
-    display: flex;
-    gap: 400px;
-    flex-direction: row;
+.contact-lr {
+  display: flex;
+  gap: 400px;
+  flex-direction: row;
 }
-.contact-left{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.left-para{
-    font-size: 24px;
+.left-para {
+  font-size: 24px;
 }
-.left-agenta{
-    display: flex;
-    gap: 20px;
+.left-agenta {
+  display: flex;
+  gap: 20px;
 }
-.contact-left h1{
-    background: linear-gradient(orange,pink);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.contact-left h1 {
+  background: linear-gradient(orange, pink);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.left-agenta p{
-    font-size: 24px;
+.left-agenta p {
+  font-size: 24px;
 }
-.contact-right{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-right: 50px;
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 50px;
 }
-.contact-right label{
-    font-size: 24px;
+.contact-right label {
+  font-size: 24px;
 }
-.contact-right button{
-    padding: 10px 30px;
-    border-radius: 50px;
-    border: 2px solid white;
-    background: linear-gradient(orange,pink);
-    cursor: pointer;
-    transition:0.3s;
-    margin-bottom: 40px;
-    color: white;
+.contact-right button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background: linear-gradient(orange, pink);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 40px;
+  color: white;
 }
-.contact-right button:hover{
-        transform: scale(1.05);
-
+.contact-right button:hover {
+  transform: scale(1.05);
 }
-.contact-right input{
-    border-radius: 10px;
-    padding: 10px 80px;
-    
+.contact-right input {
+  border-radius: 10px;
+  padding: 10px 80px;
 }
-.contact-right textarea{
-    border-radius: 10px;
-    padding: 10px 20px;
-    
+.contact-right textarea {
+  border-radius: 10px;
+  padding: 10px 20px;
 }

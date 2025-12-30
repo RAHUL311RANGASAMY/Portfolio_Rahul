@@ -8,14 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install 
+RUN npm install --production
 
 # Copy remaining backend files
 COPY . .
 
-RUN npm run build
 # Expose backend port
-EXPOSE 5173
+EXPOSE 5000
 
 # Start the server
-CMD ["npm", "run","preview"]
+CMD ["node", "server.js"]

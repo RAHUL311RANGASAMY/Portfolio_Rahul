@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import "./Contact.css";
-import theme_pattern from "../../assets/theme_pattern.svg";
-import mail_icon from "../../assets/mail_icon.svg";
-import call_icon from "../../assets/call_icon.svg";
-import location_icon from "../../assets/location_icon.svg";
+import React, { useState } from 'react';
+import './Contact.css';
+import theme_pattern from '../../assets/theme_pattern.svg';
+import mail_icon from '../../assets/mail_icon.svg';
+import call_icon from '../../assets/call_icon.svg';
+import location_icon from '../../assets/location_icon.svg';
 
 const Contact = () => {
   // State for form inputs
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   // State for submission status
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState('');
 
   // Handle input changes
   const handleChange = (e) => {
@@ -24,26 +24,26 @@ const Contact = () => {
   // Handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault(); // prevent page reload
-    setStatus("Sending...");
+    setStatus('Sending...');
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
       const data = await response.json();
 
       if (response.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // reset form
+        setStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' }); // reset form
       } else {
-        setStatus(data.error || "Something went wrong!");
+        setStatus(data.error || 'Something went wrong!');
       }
     } catch (err) {
       console.error(err);
-      setStatus("Server error.Please try again later.");
+      setStatus('Server error.Please try again later.');
     }
   };
 
@@ -58,9 +58,8 @@ const Contact = () => {
           <h1>Let's talk</h1>
           <div className="left-para">
             <p>
-              I am currently available to take on new projects. Feel free to
-              send me a message about anything you want me to work on. You can
-              contact me anytime.
+              I am currently available to take on new projects. Feel free to send me a message about
+              anything you want me to work on. You can contact me anytime.
             </p>
           </div>
           <div className="left-agenta">
