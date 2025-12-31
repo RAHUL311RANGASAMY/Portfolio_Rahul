@@ -14,7 +14,7 @@ const Contact = () => {
   });
 
   // State for submission status
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("");;
 
   // Handle input changes
   const handleChange = (e) => {
