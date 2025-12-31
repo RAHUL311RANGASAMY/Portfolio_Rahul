@@ -8,7 +8,7 @@ const Hero = () => {
   //scroll
   const [menu, setMenu] = useState("connect");
 
-  const akka=10
+  //const akka=10
   return (
     <div className="hero" id="hero-scroll">
       <img src={profile_img} alt="" />
