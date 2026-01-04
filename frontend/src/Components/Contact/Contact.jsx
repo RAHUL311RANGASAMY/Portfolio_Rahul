@@ -11,7 +11,7 @@ const Contact = () => {
     name: '',
     email: '',
     message: '',
-  });
+  });;
 
   // State for submission status
   const [status, setStatus] = useState('');
