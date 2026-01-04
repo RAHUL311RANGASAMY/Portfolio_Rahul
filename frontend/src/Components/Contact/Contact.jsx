@@ -13,7 +13,7 @@ const Contact = () => {
     message: '',
   });;
 
-  // State for submission status
+  State for submission status
   const [status, setStatus] = useState('');
 
   // Handle input changes
