@@ -25,7 +25,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // prevent page reload
     setStatus('Sending...');
-
+    
     try {
       // const response = await fetch('http://localhost:5000/api/contact', {
       //   method: 'POST',
